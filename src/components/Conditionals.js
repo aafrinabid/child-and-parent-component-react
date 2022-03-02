@@ -9,19 +9,12 @@ import React, { Component } from 'react'
     }
   }
     render() {
-
-        let message
-        if(this.state.isLoggenin){
-         message= <div>Welcome my man</div>
-        }
-        else{
-            message= <div>Welcome who ever the fuck you are</div>
-        }
-        
-    return (
-      <div>{message}</div>
-    )
-  }
+return(
+        this.state.isLoggenin ?
+        <div>welcome mahima purshu shekar</div>
+        : <div>oh you again please create an account</div> 
+)
 }
+ }
 
 export default Conditionals
