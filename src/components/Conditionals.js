@@ -5,22 +5,11 @@ import React, { Component } from 'react'
     super(props)
   
     this.state = {
-       isLoggenin:false
+       isLoggenin:true
     }
   }
     render() {
-
-        let message
-        if(this.state.isLoggenin){
-         message= <div>Welcome my man</div>
-        }
-        else{
-            message= <div>Welcome who ever the fuck you are</div>
-        }
-        
-    return (
-      <div>{message}</div>
-    )
+return( this.state.isLoggenin && <div>welcome my chinkudu bangadu</div>)
   }
 }
 
